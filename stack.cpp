@@ -18,6 +18,9 @@ void push(int a) {
 }
 
 int pop() {
+    if (top == 0) {
+        return;
+    }
     top--;
     return stackArray[top + 1];
 }
